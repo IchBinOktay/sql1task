@@ -18,7 +18,7 @@ VALUES ('Oktay', 'Babayev', 'oktaybabayev223@gmail.com', '2006-08-04', '++945172
 ('adcaa', 'Ssvfsr', 'oktaybabayev223@gmail.com', '2006-08-04', '++94517274898',18, 'baku')
 SELECT [Name], Surname, Email from Users
 
-CREATE TABLE Categoriesss(
+CREATE TABLE Categories(
 Id INT PRIMARY KEY IDENTITY(1,1), 
 [Name] NVARCHAR(50) NOT NULL,
 Slug VARCHAR(10) UNIQUE,
@@ -29,4 +29,4 @@ IsActive BIT
 use MyApp
 INSERT INTO Categoriesss([Name], Slug, CreatedAt, IsActive )
 VALUES('Baku', 'oktay','1000-01-01', 1)
-SELECT [Name], isActive from Categoriesss 
+SELECT [Name], isActive from Categories 
